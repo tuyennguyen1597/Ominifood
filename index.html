@@ -24,15 +24,18 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" type="text/css" href="media-queries.css">
 
+  <!-- Smooth Scrolling for Safari -->
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
   <!-- JS -->
   <script defer src="index.js"></script>
 </head>
 
 <body>
-  <header id='header'>
+  <header id='header' class="no-flexbox-gap">
     <a href="#hero"><img src="/img/omnifood-logo.png" alt=""></a>
     <nav class="main-nav">
-      <ul>
+      <ul class="main-nav-list">
         <li> <a class="nav-attribute" href="#how">How it works</a></li>
         <li> <a class="nav-attribute" href="#meals">Meals</a></li>
         <li> <a class="nav-attribute" href="#testimonials">Testimonials</a></li>
@@ -53,7 +56,7 @@
 
   </header>
   <main>
-    <section id='hero' class="section-hero">
+    <section id='hero' class="section-hero no-flexbox-gap">
       <div class="hero">
         <div class="hero-text-box">
           <h1 class='heading-primary'>A healthy meal delivered to your door, every single day</h1>
@@ -99,7 +102,8 @@
       </div>
     </section>
 
-    <section id='how' class="section-how">
+    <section id='how' class="section- no-flexbox-gap">
+      <section id='how' class="section-how">
       <div class="how-heading container">
         <span class="subheading">How it works</span>
         <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -242,7 +246,7 @@
     </div>
 
     <!-- Testimonials -->
-    <section id='testimonials' class="section-testimonials">
+    <section id='testimonials' class="section-testimonials no-flexbox-gap">
       <div class="testimonial-container">
         <div class="testimonial-heading">
           <p class="subheading">Testimonials</p>
@@ -334,7 +338,7 @@
     </section>
 
     <!-- PRICING -->
-    <section id='pricing' class="section-pricing">
+    <section id='pricing' class="section-pricing no-flexbox-gap">
       <div class="container pricing-heading">
         <p class="subheading">Pricing</p>
         <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -405,7 +409,7 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="section-feature">
+    <section class="section-feature no-flexbox-gap">
       <div class="container grid grid--4-cols">
         <div class="feature">
           <ion-icon class='feature-icon margin-bottom-sm' name="infinite-outline"></ion-icon>
@@ -431,7 +435,7 @@
     </section>
 
     <!-- CALL TO ACTION -->
-    <section id='cta' class="section-cta">
+    <section id='cta' class="section-cta no-flexbox-gap">
       <div class="container">
         <div class="cta">
           <div class="cta-text-box">
@@ -469,7 +473,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="no-flexbox-gap">
     <div class="container grid grid--5-cols">
       <div class="logo-col">
         <a href="#header"><img src="/img/omnifood-logo.png" alt="Omnifood logo"></a>
