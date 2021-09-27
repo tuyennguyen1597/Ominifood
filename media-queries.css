@@ -1,0 +1,343 @@
+/***********************
+    1316px
+***********************/
+
+@media(max-width: 82.25em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .hero {
+    max-width: 120rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/***********************
+    1132px
+***********************/
+
+@media(max-width: 70.75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .hero {
+    column-gap: 4.8rem;
+  }
+}
+
+/***********************
+    988px
+***********************/
+
+@media(max-width: 61.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/***********************
+    880px
+***********************/
+
+@media(max-width: 55em) {
+  html {
+    font-size: 50%;
+  }
+  .meal-title {
+    font-size: 2.2rem;
+  }
+  footer .grid {
+    column-gap: 2.4rem;
+  }
+}
+
+/***********************
+    852px
+***********************/
+
+@media (max-width: 53.25rem) {
+  .heading-primary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+    line-height: 1.2;
+  }
+  .heading-tertiar {
+    font-size: 2.4rem;
+  }
+  /* Mobile button nav */
+  .main-nav {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    /* Move the nav complete ouside the page */
+    transform: translateX(100%);
+    /* 3 css properties below is used insead of 
+    * display: none;
+    * -- because display: none cannt used for transition/animation */
+    /* Cannot accessible using mouse or keyboard */
+    pointer-events: none;
+    /* Make the nav invibleable */
+    opacity: 0;
+    /* Hidden from the screen reader */
+    visibility: hidden;
+  }
+  .nav-buttons {
+    display: block;
+  }
+  .nav-open .main-nav {
+    transform: translateX(0);
+    pointer-events: auto;
+    opacity: 100;
+    visibility: visible;
+  }
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+  .nav-attribute {
+    font-size: 4.4rem;
+  }
+  .nav-open .btn:link, .btn:visited {
+    font-size: 3.2rem;
+    padding: 2.4rem 4.4rem;
+  }
+  .hero {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .hero-img-box {
+    justify-self: center;
+    width: 70%;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin: 2.4rem 0 9.6rem;
+  }
+  .feature-imgs img {
+    height: 2.4rem;
+  }
+  .section-meals .grid {
+    column-gap: 3.2rem;
+    margin-bottom: 4.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem;
+  }
+  .diets {
+    line-height: 1.2;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-container {
+    padding: 6.2rem;
+  }
+  .testimonial-heading {
+    margin-bottom: 6.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+}
+
+/***********************
+    776px
+***********************/
+@media (max-width: 48.5em) {
+  footer .grid--5-cols {
+    grid-template-columns: repeat(6, 1fr);
+  }
+   
+  .logo-col, .contact-col{
+    grid-row: 2 ;
+    grid-column: span 3;
+  }
+
+  .account-col, .company-col, .resources-col {
+    grid-column: span 2;
+  }
+}
+
+/***********************
+    708px
+***********************/
+
+@media (max-width: 44.25em) {
+  .section-meals .grid--3-cols, .section-feature .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-meals .grid {
+    row-gap: 6.2rem;
+  }
+  .diets {
+    margin: 0;
+    grid-column: span 2;
+    justify-self: center;
+  }
+  .diets .list {
+    margin-bottom: 0;
+  }
+  .diets li {
+    font-size: 2rem;
+  }
+  .all-recipes {
+    margin-top: 0rem;
+  }
+  .section-feature .grid {
+    row-gap: 4.4rem;
+  }
+  .cta {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 2.4rem;
+  }
+}
+
+/***********************
+        634px
+***********************/
+
+@media(max-width: 39.625em) {
+  .section-how .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .section-how .grid div:nth-child(2) {
+    grid-row: 1;
+  }
+  .section-how .grid div:nth-child(6) {
+    grid-row: 5;
+  }
+  .section-pricing .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-plan{
+    width: 70%;
+  }
+
+  .plan--starter, .plan--complete {
+    justify-self: center;
+  }
+
+  .step-img-box {
+    transform: translateY(4rem);
+  }
+
+  .feature-imgs img {
+    height: 1.6rem;
+  }
+}
+
+/***********************
+        570px
+***********************/
+@media(max-width: 35.625em) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 35rem;
+    grid-row: 1;
+  }
+}
+
+/***********************
+        486px
+***********************/
+@media(max-width: 30.725em) {
+  .hero-text-box .btn {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-meals .grid--3-cols {
+    grid-template-columns: 1fr;
+    margin-top: 6.2rem;
+  }
+
+  .meal {
+    margin-top: 0;
+    width: 75%;
+    justify-self: center;
+  }
+
+  .diets {
+    grid-column: span 1;
+  }
+}
+
+
+/***********************
+        436px
+***********************/
+@media (max-width: 27.25em) {
+  .section-featured {
+    padding: 2.4rem 0 1.6rem;
+  }
+
+  .feature-imgs img {
+    height: 1.2rem;
+  } 
+
+  .feature-heading {
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+  }
+}
+
+/***********************
+        396px
+***********************/
+
+@media (max-width: 24.75em) {
+  html {
+    font-size: 37.75%;
+  }
+}
+
+/***********************
+        300px
+***********************/
+
+@media (max-width: 18.75em) {
+  .hero-text-box .btn {
+    display: block;
+    margin: 2.4rem auto 0 !important;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+}
